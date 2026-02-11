@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container" id="container">
+    <div class="search-box glass">
+      <h1>🌤️ Weather App</h1>
+      <input type="text" id="cityInput" placeholder="Enter city or country">
+      <button onclick="getWeather()">Check Weather</button>
+    </div>
+
+    <div class="weather-card glass hidden" id="weatherCard">
+      <h2 id="location"></h2>
+      <p id="weatherDesc"></p>
+      <p id="temp"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
